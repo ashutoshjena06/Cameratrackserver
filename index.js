@@ -12,7 +12,7 @@ const streamRoutes = require("./routes/streamRoutes");
 const recordingsRoute = require("./routes/recordings");
 const createInitialAdmin = require("./utils/initAdmin");
 
-dotenv.config({ path: "./data.env" });
+dotenv.config();
 // Connect DB
 connectDB().then(() => {
   // Create initial admin if not exists
